@@ -1,0 +1,136 @@
+body {
+    background-image: url('e.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%; /* Resmin daha da aşağıda olmasını sağlar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.header-image {
+    height: 100px; /* Logonun boyutu */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 1px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ca5838;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-group {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(117, 117, 117, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAC255;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #425179;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #222c49;
+}
+
+.menu-group:last-child {
+    margin-left: 250px; /* Sepetim butonunu sağa yaslamak için */
+    margin-right: 150px;
+}
+
+.iletişim {
+    color: black;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Arka plan rengi ve şeffaflık */
+    margin-left: 450px;
+    padding-top: 120px;
+    margin-top: 80px;
+    
+}
+

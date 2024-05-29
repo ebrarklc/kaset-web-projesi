@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuna Üngör Kaset Store</title>
+    <link rel="stylesheet" href="styleKayıt.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="Tuna" class="header-image">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products, categories or brands" class="search-input">
+            <button class="search-button">🔍</button>
+        </div>
+        <div class="menu-group">
+            <ul class="menu">
+                <li><a href="Anasayfa.html">Anasayfa</a></li>
+                <li><a href="Hakkımızda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Ürünlerimiz</button>
+                    <div class="dropdown-content">
+                        <a href="Kaset.html">Kasetler</a>
+                        <a href="plak.html">Plaklar</a>
+                    </div>
+                </li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="menu-group">
+            <ul class="menu">
+                <li><a href="sepetim.html" class="button">Sepetim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="signInForm">
+                <h2>Kayıt Ol</h2>
+                <input type="text" id="signInUsername" placeholder="Kullanıcı Adı" required />
+                <input type="text" id="firstName" placeholder="Adınız" required />
+                <input type="text" id="lastName" placeholder="Soyadınız" required />
+                <input type="email" id="email" placeholder="E Mail Adresiniz" required />
+                <input type="password" id="password" placeholder="Şifreniz" required />
+                <button id="signIn" class="ghost link-button">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

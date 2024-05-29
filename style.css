@@ -1,0 +1,299 @@
+body {
+    background-image: url('anasayfa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%; /* Resmin daha da aşağıda olmasını sağlar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.header-image {
+    height: 100px; /* Logonun boyutu */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 1px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ca5838;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-group {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(117, 117, 117, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAC255;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #425179;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #222c49;
+}
+
+.menu-group:last-child {
+    margin-left: 250px; /* Sepetim butonunu sağa yaslamak için */
+    margin-right: 150px;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Arka plan rengi ve şeffaflık */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 350px;
+    margin-top: 100px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* Button styles for overlay */
+.ghost {
+    background-color: transparent;
+    border-color: white;
+    border: 2px solid #ca5838;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 70px;
+    
+}
+
+.ghost:hover {
+    background-color: #ca5838;
+    color: black;
+}
+
+
+
+#signIn, #signUp {
+    margin-top: 20px;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    
+}
+.link-button{
+    color: white;
+}
+
+h1{
+    margin-left: 100px;
+}
+
+p{
+    margin-left: 100px;
+}
+
+.form-container button#signIn {
+    margin-top: 10px; /* Diğer butonlarla arasındaki mesafeyi ayarlar */
+    border-color: #425179; /* Kenarlık rengi */
+}
+
+.form-container button#signIn:hover {
+    background-color: #425179; /* Hover efekti için arka plan rengi */
+    color: white; /* Hover efekti için metin rengi */
+}
+

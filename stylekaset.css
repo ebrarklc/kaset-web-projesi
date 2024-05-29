@@ -1,0 +1,193 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%; /* Resmin daha da aşağıda olmasını sağlar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.header-image {
+    height: 100px; /* Logonun boyutu */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 1px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ca5838;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.menu-group {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(117, 117, 117, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #EAC255;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #425179;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #222c49;
+}
+
+.menu-group:last-child {
+    margin-left: 250px; /* Sepetim butonunu sağa yaslamak için */
+    margin-right: 150px;
+}
+
+h3{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kaset {
+    display: inline-block;
+    width: 21.5%; /* İstenilen genişlik ayarlanabilir */
+    height: 350px;
+    margin: 22px; /* Boşluk ayarlanabilir */
+    vertical-align: top; /* Dikey hizalama */
+    background-color: #CA5038;
+    color: white; /* Yazı rengini beyaz yaptık */
+    text-align: center; /* Metni ortaladık */
+    border-style:dashed;
+}
+
+.kaset1 {
+    width: 90%; /* İstenilen genişlik ayarlanabilir */
+    height: 200px;
+    margin: 20px; /* Boşluk ayarlanabilir */
+    vertical-align: top; /* Dikey hizalama */
+}
+
+.price {
+    font-size: 18px; /* Fiyat yazısının boyutunu ayarladık */
+    margin: 10px 0; /* Üst ve alt boşluk ayarlandı */
+    color: white;
+    text-align: center;
+}
+
+.reklam{
+    font-size: 18px; /* Fiyat yazısının boyutunu ayarladık */
+    margin: 10px 0; /* Üst ve alt boşluk ayarlandı */
+    color: white;
+    text-align: center;
+}
+
+.buttons {
+    margin: 10px 0; /* Üst ve alt boşluk ayarlandı */
+}
+
+.buy-button, .cart-button {
+    padding: 10px 20px; /* Buton içi boşluk ayarlandı */
+    margin: 5px; /* Butonlar arasındaki boşluk ayarlandı */
+    border: none;
+    border-radius: 5px; /* Köşeleri yuvarladık */
+    cursor: pointer;
+    font-size: 16px; /* Buton yazısının boyutunu ayarladık */
+    
+}
+
+.buy-button {
+    background-color: #EAC255; /* Satın Al butonunun rengi */
+    color: white;
+}
+
+.cart-button {
+    background-color: #425179; /* Sepete Ekle butonunun rengi */
+    color: white;
+}
+
+.buy-button:hover {
+    background-color: #D4A62A; /* Satın Al butonunun üzerine gelindiğinde renk değişimi */
+}
+
+.cart-button:hover {
+    background-color: rgb(9, 54, 75); /* Sepete Ekle butonunun üzerine gelindiğinde renk değişimi */
+}
